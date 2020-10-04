@@ -1,0 +1,18 @@
+version: "3.3"
+
+services:
+    database:
+        container_name: freelancer_score_database
+        image: postgres:11.8
+        restart: always
+        volumes:
+            - pg-data:/var/lib/postgresql/data
+        environment: 
+            - LC_ALL=C.UTF-8
+            - POSTGRES_PASSWORD=abg
+            - POSTGRES_USER=abg
+            - POSTGRES_DB=testdb
+        ports:
+            - 5434:5432
+volumes:
+    pg-data:
