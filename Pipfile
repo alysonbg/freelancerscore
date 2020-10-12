@@ -5,6 +5,9 @@ verify_ssl = true
 
 [dev-packages]
 flake8 = "*"
+pytest-django = "*"
+pytest-cov = "*"
+model-bakery = "*"
 
 [packages]
 django = "*"
@@ -13,6 +16,7 @@ python-decouple = "*"
 dj-database-url = "*"
 psycopg2-binary = "*"
 django-extensions = "*"
+python-dateutil = "*"
 
 [requires]
 python_version = "3.8"
