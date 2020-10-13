@@ -34,4 +34,6 @@ jobs:
     - name: Lint with flake8
       run: |
         pipenv run flake8 .
+      run: |
+        pipenv run pytest freelancerscore --cov=freelancerscore
 
