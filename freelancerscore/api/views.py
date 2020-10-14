@@ -7,7 +7,7 @@ from freelancerscore.api import business_logic
 from rest_framework import status
 
 
-class ListFreelancer(generics.ListAPIView):
+class ListFreelancer(generics.ListCreateAPIView):
     queryset = Freelancer.objects.all()
     serializer_class = FreelancerSerializer
 
