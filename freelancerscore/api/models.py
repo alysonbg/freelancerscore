@@ -17,7 +17,7 @@ class Experience(models.Model):
 
 
 class Freelancer(models.Model):
-    user = models.OneToOneField(get_user_model(), on_delete=models.CASCADE)
+    user = models.OneToOneField(get_user_model(), on_delete=models.CASCADE, blank=True, null=True)
     status = models.CharField(max_length=10)
     retribution = models.IntegerField()
     availability_date = models.DateTimeField()
