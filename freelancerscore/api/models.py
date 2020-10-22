@@ -3,7 +3,7 @@ from django.contrib.auth import get_user_model
 
 
 class Skill(models.Model):
-    name = models.CharField(max_length=30, unique=True)
+    name = models.CharField(max_length=30)
 
     def __str__(self) -> str:
         return self.name
